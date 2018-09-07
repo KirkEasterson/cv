@@ -34,38 +34,40 @@
 \vspace{.05in}
 \begin{tabular}{@{}p{3.5in}p{3in}}
 631-707-1206 & {\bf \textcolor{blue}{\href{mailto:kirk.easterson@gmail.com}{kirk.easterson@gmail.com}}} \\
-31 Beachview Place &  {\bf \textcolor{blue}{\href{http://www.kirkeasterson.com}{kirkeasterson.com}}}\\
+31 Beachview Place &  {\bf \textcolor{blue}{\href{http://www.kirkeasterson.com}{kirk.easterson.com}}}\\
 Ronkonkoma, NY 11779 &  {\bf \textcolor{blue}{\href{http://www.linkedin.com/in/kirkeasterson}{linkedin.com/in/kirkeasterson}}}\\
 & {\bf \textcolor{blue}{\href{https://www.github.com/kirkeasterson}{github.com/kirkeasterson}}}
 \end{tabular}
 
 \section{\sc Education}
-{\bf Stony Brook University}, \textit{Stony Brook, NY} \hfill {\bf August 2017 -- May 2020}\\
+{\bf Stony Brook University}, Stony Brook, NY \hfill {\bf August 2017 -- present}\\
 Non-matriculated graduate student taking Computer Science and Math courses(Data Structures and Algorithms, Software Design, Advanced Java, Probability Theory, System Architecture, Network Design, Database Design, Foundations of Computer Science, Finite Mathematical Structures, Linear Algebra, Physics)
 
-{\bf SUNY Fredonia}, \textit{Fredonia, NY} \hfill {\bf August 2012 -- May 2015}\\
+{\bf Massachusetts Institute of Technology}, Cambridge, MA \hfill {\bf June 2016 -- September 2016}\\
+Big Data and Social Analytics online course. Analyze user's mobile phone data using Python, R, Jupyter Notebooks, and AWS. Used to predict behavior of the end-user. Used R libraries ggplot2, randomforest, and RegTest.
+
+{\bf SUNY Fredonia}, Fredonia, NY \hfill {\bf August 2012 -- May 2015}\\
 B.A. in Music with specialization in Classical Performance
 
-{\bf MIT Certificate Course} \hfill {\bf June 2016 -- September 2016}\\
-\textit{Big Data and Social Analytics}, analyze user's mobile phone data using Python, R, Jupyter Notebooks, and AWS. Used to predict behavior of the end-user. Used R libraries ggplot2, randomforest, and RegTest.
+\section{\sc Technical\\Skills}
+{\bf Languages}:  Java, C, C++, Python, R, SQL, HTML, CSS, Javascript, Prolog, {\LaTeX}, Bash, SML, MIPS\\
+{\bf Software:}: Git, Visual Studio, Android Studio, MySQL, AWS, Jupyter, Photoshop, Blender, VMware, Vim, Emacs, Tableau, Pro Tools
 %%%%%%%%%%%%%%%%%%%
 
 \section{\sc Professional Experience}
 %%%%%%
-{\bf Fire Rescue Systems}, \textit{Hauppauge, NY} \hfill {\bf May 2017 -- August 2017}\\
+{\bf Gentoo Linux}\hfill {\bf May 2018 -- Present}\\
+{\em Translator}
+\begin{list2} %Job Description%
+\item Translated dozens of pages from the wiki and documentation into Norwegian and Swedish
+%\item Assisted with debugging and project planning\\
+\end{list2}
+%%%%%%
+{\bf Fire Rescue Systems}, Hauppauge, NY \hfill {\bf May 2017 -- August 2017}\\
 {\em Software Engineer Intern}
 \begin{list2} %Job Description%
 \item Document C++ and Java for software and Android apps for management of local fire departments
 \item Gained professional experience with Git and Visual Studio, also assisting with debugging and project planning
-\end{list2}
-
-{\bf The Paramount}, \textit{Huntingtion, NY}\hfill {\bf May 2015 -- Present}\\
-{\em Audio Engineer/Stage Manager}
-\begin{list2} %Job Description%
-\item Crafted a monitor mix for over 500 acts in a 1,500 seat venue
-\item Worked with artists such as Fergie, Nick Jonas, Meatloaf, Weird Al, and Judas Priest
-\end{list2}
-%%%%%%
 \end{list2}
 %%%%%%
 
@@ -100,10 +102,6 @@ B.A. in Music with specialization in Classical Performance
 \item Provides statistics about the document including word count, sentence count, and Flesch score
 \end{list2}
 
-\section{\sc Skills}
-{\bf Languages}:  Java, C, C++, Python, R, SQL, HTML, CSS, Javascript, Prolog, {\LaTeX}, Bash, SML, MIPS\\
-{\bf Software}: Git, Visual Studio, Android Studio, MySQL, AWS, Jupyter, Photoshop, Blender, VMware, Vim, Emacs, Tableau, Pro Tools\\
-{\bf Spoken Languages}: Norwegian, Swedish
 \end{resume}
 \end{document}
 
