@@ -1,7 +1,8 @@
-\documentclass[10pt,letterpaper]{article} % Font size (10-12pt) and paper size (a4paper, letterpaper, legalpaper, etc)
+\documentclass[11pt,letterpaper]{article} 
 \include{structure} 
 \hyphenation{Some-long-word}
 \usepackage{xcolor}
+\usepackage{enumitem}
 
 \begin{document} 
 
@@ -9,16 +10,19 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\maintitle{Kirk Easterson}{}
-
-\spacedhrule{0.3em}{0.4em}
-\makebox[\linewidth][s]{
-\bf \textcolor{blue}{\href{mailto:kirk.easterson@gmail.com}{kirk.easterson@gmail.com}} \bull 
+\maintitle{Kirk Easterson}{{
+		\bf \hfill\small{\textcolor{blue}{\href{mailto:kirk.easterson@gmail.com}{kirk.easterson@gmail.com}} \bull 
 \textcolor{blue}{\href{https://www.kirkeasterson.com}{kirkeasterson.com}} \bull 
-\textcolor{blue}{\href{https://www.github.com/kirkeasterson}{github.com/kirkeasterson}} \bull 
-\textcolor{blue}{\href{https://www.linkedin.com/in/kirkeasterson/}{linkedin.com/in/kirkeasterson}}\\
-} \par
-\spacedhrule{0.2em}{-0.9em}
+\textcolor{blue}{\href{https://www.github.com/kirkeasterson}{github.com/kirkeasterson}}}}}
+
+\spacedhrule{-0.2em}{-0.9em}
+%\makebox[\linewidth][s]{
+%		\bf \small{\textcolor{blue}{\href{mailto:kirk.easterson@gmail.com}{kirk.easterson@gmail.com}} \bull 
+%\textcolor{blue}{\href{https://www.kirkeasterson.com}{kirkeasterson.com}} \bull 
+%\textcolor{blue}{\href{https://www.github.com/kirkeasterson}{github.com/kirkeasterson}} \bull 
+%\textcolor{blue}{\href{https://www.linkedin.com/in/kirkeasterson/}{linkedin.com/in/kirkeasterson}}\\
+%}} \par
+%\spacedhrule{0.2em}{-0.9em}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -71,9 +75,8 @@
 \headedsection 
 {Kale -- \textit{PLY(Python, Lex, Yacc)}}
 {\textit{June 2018}} {
-\begin{itemize}
-	\setlength\itemsep{-0.3em}
-	\item Built a scripting language based on materiails learned in \textit{CSE 307: Principles of Programming Languages}
+		\begin{itemize}[noitemsep,nolistsep]
+	\item Built a scripting language based on materials learned in \textit{CSE 307: Principles of Programming Languages}
 	\item Organizes assignment deadlines via the CLI
 	\item Designed an attribute grammar for parsing of strongly typed data types
 \end{itemize}
@@ -84,8 +87,7 @@
 \headedsection 
 {Mimir -- \textit{JavaFX and SQL}}
 {\textit{April 2018 -- May 2018}} {
-\begin{itemize}
-	\setlength\itemsep{-0.3em}
+\begin{itemize}[noitemsep,nolistsep]
 	\item Created a full stack university records application to maintain student information
 	\item Monitor students' grades and course sequence featuring MVC and Factory design patterns
 	\item Implements SQL for the backend and JavaFX for the frontend
@@ -97,8 +99,7 @@
 \headedsection 
 {Lyder Media Player -- \textit{JavaFX}}
 {\textit{Nov 2017 -- Dec 2017}} {
-\begin{itemize}
-	\setlength\itemsep{-0.3em}
+\begin{itemize}[noitemsep,nolistsep]
 	\item Designed an audio player that supports \textit{.mp3, .wav, .wma, .ogg,} and \textit{.flac}  audio file formats
 	\item Can create and edit playlists with shuffle and looping playback
 	\item UI composed with \textit{Scene Builder} and \textit{openjfx} based on materials learned in \textit{CSE 214: Computer Science II}
@@ -110,8 +111,7 @@
 \headedsection 
 {MicroPad -- \textit{JavaFX}}
 {\textit{Sep 2017}} {
-\begin{itemize}
-	\setlength\itemsep{-0.3em}
+		\begin{itemize}[noitemsep,nolistsep]
 	\item Constructed a text editor to create and edit \textit{.txt} files
 	\item Contains a \textit{vi} mode with basic \textit{vi} navigation and editing commands
 	\item Analyzing the text allows the user to see the word count, sentence count, and the Flesch Score
@@ -129,37 +129,33 @@
 \roottitle{Experience} 
 
 \headedsection
-{Gentoo Linux}
-{} {
-
-\headedsubsection
-{Translator}
-{May 2018 -- present}
-{\bodytext{Translated over 50 pages of documentation into Norwegian and Swedish}}
+{Gentoo Linux -- \textit{Translator}}
+{\textit{May 2018 -- present}} {
+	\begin{itemize}[noitemsep,nolistsep]
+		\item Translated over 50 pages of documentation into Norwegian and Swedish
+	\end{itemize}
 }
 
 %------------------------------------------------
 
 \headedsection 
-{Fire Rescue Systems}
-{\textsc{Hauppague, NY}} {
-
-\headedsubsection
-{Software Engineer Intern}
-{May 2017 -- August 2017}
-{\bodytext{Documented C++ and Java for emergency response software and Android apps. Wrote and debugged code with heavy use of Visuala Studio and Git }}
+{Fire Rescue Systems -- \textit{Software Engineer Intern}}
+{\textit{May 2017 -- August 2017}} {
+	\begin{itemize}[noitemsep,nolistsep]
+		\item Wrote and debugged code with use of Visual Studio and Git
+		\item Wrote documentation of C++ and Java for emergency response software
+	\end{itemize}
 }
 
 %------------------------------------------------
 
 \headedsection 
-{The Paramount}
-{\textsc{Huntington, NY}} {
-
-\headedsubsection 
-{Audio Engineer}
-{May 2015 -- present}
-{\bodytext{Built a monitor mix for over 500 acts in a 1,500 seat venue. Worked with artists such as Fergie, Joe Jonas, Meatloaf, Weird Al, and Train}}
+{The Paramount -- \textit{Stage Manager}}
+{\textit{May 2015 -- May 2018}} {
+	\begin{itemize}[noitemsep,nolistsep]
+		\item Managed over 500 acts in a 1,500 seat entertainment venue
+		\item Worked with artists such as Fergie, Joe Jonas, Meatloaf, Weird Al, and Train
+	\end{itemize}
 }
 
 %------------------------------------------------
@@ -174,7 +170,7 @@
 
 \inlineheadsection 
 {Languages:}
-{Java, C, C++, Python, R, SQL, HTML, CSS, Javascript, Prolog, {\LaTeX}, Bash, SML, MIPS}
+{Java, C, C++, Python, R, SQL, HTML, CSS, Javascript, Prolog, {\LaTeX}, Bash, LISP, SML, MIPS}
 
 %------------------------------------------------
 
@@ -189,6 +185,5 @@
 {English \textit{(mother tongue)}, Norwegian \textit{(limited professional proficiency)}, Swedish \textit{(limited professional proficiency)}, Danish \textit{(elementary proficiency)} and French \textit{(elementary proficiency)}.}
 
 %------------------------------------------------
-
 
 \end{document}
