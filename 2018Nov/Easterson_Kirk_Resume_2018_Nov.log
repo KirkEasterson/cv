@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.17)  21 NOV 2018 12:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.17)  23 NOV 2018 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -456,8 +456,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
  7969 strings out of 494953
- 121880 string characters out of 6180976
- 246875 words of memory out of 5000000
+ 121876 string characters out of 6180976
+ 247875 words of memory out of 5000000
  11164 multiletter control sequences out of 15000+600000
  50846 words of font info for 59 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
@@ -468,7 +468,7 @@ nc/dvips/tex-gyre/q-ec-sc.enc}</usr/share/texlive/texmf-dist/fonts/type1/public
 </usr/share/texmf/fonts/type1/public/tex-gyre/qplbi.pfb></usr/share/texmf/fonts
 /type1/public/tex-gyre/qplr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/q
 plri.pfb>
-Output written on Easterson_Kirk_Resume_2018_Nov.pdf (1 page, 122411 bytes).
+Output written on Easterson_Kirk_Resume_2018_Nov.pdf (1 page, 123345 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
