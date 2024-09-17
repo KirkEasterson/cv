@@ -12,13 +12,10 @@ jobs:
       - uses: "xu-cheng/latex-action@v3"
         with:
           root_file: "main.tex"
-      - name: "Get current date"
-        run: echo "OUT=$(date +'easterson_kirk_cv_%Y_%m_%d')" >> $GITHUB_ENV
-      - name: Rename output file
-        run: mv "main.pdf" "${{env.OUT}}.pdf"
       - uses: "actions/upload-artifact@v4"
         with:
-          path: "${{env.OUT}}.pdf"
+          name: "artifact"
+          path: "main.pdf"
 
   release:
     needs: "build"
@@ -31,7 +28,8 @@ jobs:
         id: "download-artifact"
         uses: "dawidd6/action-download-artifact@v6"
         with:
-          path: "artifact"
+          name: "artifact"
+          path: "main.pdf"
 
       - name: "Get current date"
         run: echo "TODAY=$(date +'%Y_%m_%d')" >> $GITHUB_ENV
@@ -57,6 +55,6 @@ jobs:
           GITHUB_TOKEN: "${{ github.token }}"
         with:
           upload_url: "${{ steps.create_release.outputs.upload_url }}"
-          asset_path: "artifact/easterson_kirk_cv_${{env.TODAY}}.pdf"
+          asset_path: "artifact/main.pdf"
           asset_name: "easterson_kirk_cv_${{env.TODAY}}.pdf"
           asset_content_type: "application/pdf"
