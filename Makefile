@@ -7,3 +7,9 @@ all:
 clean:
 	rubber --clean $(CV)
 	rm $(OUT).pdf
+
+watch:
+	while true; do \
+		$(MAKE) $(WATCHMAKE); \
+		inotifywait -qre close_write .; \
+	done
