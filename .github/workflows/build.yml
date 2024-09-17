@@ -1,0 +1,22 @@
+---
+name: "build"
+
+on: ["push"]
+
+jobs:
+  build:
+    name: "build"
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v4"
+      - uses: "xu-cheng/latex-action@v3"
+        with:
+          root_file: "main.tex"
+      - name: "Put current date into a variable"
+        run: |
+          $NOW=& Get-Date -format yyyy_MM_dd
+          echo "NOW=$NOW" >> $env:GITHUB_ENV
+      - uses: "actions/upload-artifact@v4"
+        with:
+          name: "easterson_kirk_cv_{{env.NOW}}.pdf"
+          path: "main.pdf"
