@@ -12,10 +12,8 @@ jobs:
       - uses: "xu-cheng/latex-action@v3"
         with:
           root_file: "main.tex"
-      - name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y_%m_%d')"
+      - name: Rename output file with current date
+        run: mv "main.pdf" "easterson_kirk_cv_$(date +'%Y_%m_%d').pdf"
       - uses: "actions/upload-artifact@v4"
         with:
-          name: "easterson_kirk_cv_${{steps.date.outputs.date}}.pdf"
           path: "main.pdf"
