@@ -12,8 +12,10 @@ jobs:
       - uses: "xu-cheng/latex-action@v3"
         with:
           root_file: "main.tex"
-      - name: Rename output file with current date
-        run: mv "main.pdf" "easterson_kirk_cv_$(date +'%Y_%m_%d').pdf"
+      - name: "Get current date"
+        run: echo "OUT=$(date +'easterson_kirk_cv_%Y_%m_%d')" >> $GITHUB_ENV
+      - name: Rename output file
+        run: mv "main.pdf" "${OUT}.pdf"
       - uses: "actions/upload-artifact@v4"
         with:
-          path: "easterson_kirk_cv_$(date +'%Y_%m_%d').pdf"
+          path: "${OUT}.pdf"
