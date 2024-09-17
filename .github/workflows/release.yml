@@ -1,0 +1,49 @@
+---
+name: "Releases"
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+    permissions:
+      contents: "write"
+    steps:
+
+      - name: "Download artifact"
+        id: "download-artifact"
+        uses: "dawidd6/action-download-artifact@v6"
+        with:
+          github_token: "${{secrets.GITHUB_TOKEN}}"
+          workflow: "build.yml"
+
+      - name: "Get current date"
+        run: echo "TODAY=$(date +'%Y_%m_%d')" >> $GITHUB_ENV
+
+      - name: "Set release version"
+        run: echo "::set-output name=version::$(${{env.TODAY}}_{GITHUB_SHA}')"
+        id: "version"
+
+      - name: "Create release"
+        uses: "actions/create-release@v1"
+        id: "create_release"
+        with:
+          draft: true # TODO: make false
+          prerelease: false
+          release_name: "${{ steps.version.outputs.version }}"
+          tag_name: "${{ github.ref }}"
+        env:
+          GITHUB_TOKEN: "${{ github.token }}"
+
+      - name: "Upload artifacts to release"
+        uses: "actions/upload-release-asset@v1"
+        env:
+          GITHUB_TOKEN: "${{ github.token }}"
+        with:
+          upload_url: "${{ steps.create_release.outputs.upload_url }}"
+          asset_path: "artifact/easterson_kirk_cv_${{env.TODAY}}.pdf"
+          asset_name: "easterson_kirk_cv_${{env.TODAY}}.pdf"
+          asset_content_type: "application/pdf"
