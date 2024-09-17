@@ -16,4 +16,4 @@ jobs:
         run: mv "main.pdf" "easterson_kirk_cv_$(date +'%Y_%m_%d').pdf"
       - uses: "actions/upload-artifact@v4"
         with:
-          path: "main.pdf"
+          path: "easterson_kirk_cv_$(date +'%Y_%m_%d').pdf"
