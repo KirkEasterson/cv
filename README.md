@@ -1,5 +1,5 @@
-# Resume
-All files for my resume
+# CV
+All files for my CV
 
 ## Building
 
