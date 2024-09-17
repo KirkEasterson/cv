@@ -2,7 +2,7 @@ CV=main.tex
 OUT=main
 
 all:
-	rubber --pdf --jobname $(OUT) $(CV)
+	rubber --pdf --force --jobname $(OUT) $(CV)
 
 clean:
 	rubber --clean $(CV)
