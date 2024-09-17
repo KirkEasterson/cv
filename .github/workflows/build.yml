@@ -15,7 +15,7 @@ jobs:
       - name: "Get current date"
         run: echo "OUT=$(date +'easterson_kirk_cv_%Y_%m_%d')" >> $GITHUB_ENV
       - name: Rename output file
-        run: mv "main.pdf" "${OUT}.pdf"
+        run: mv "main.pdf" "${{env.OUT}}.pdf"
       - uses: "actions/upload-artifact@v4"
         with:
-          path: "${OUT}.pdf"
+          path: "${{env.OUT}}.pdf"
