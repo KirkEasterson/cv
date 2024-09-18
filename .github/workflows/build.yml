@@ -49,7 +49,7 @@ jobs:
           draft: false
           prerelease: false
           release_name: "${{ steps.version.outputs.version }}"
-          tag_name: "${{ github.ref }}"
+          tag_name: "cv"
 
       - name: "Upload artifacts to release"
         uses: "actions/upload-release-asset@v1"
