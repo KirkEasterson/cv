@@ -36,7 +36,7 @@ jobs:
         run: echo "TODAY=$(date +'%Y_%m_%d')" >> $GITHUB_ENV
 
       - name: "Set release version"
-        run: echo "::set-output name=version::$(${{env.TODAY}}_${GITHUB_SHA}')"
+        run: echo "::set-output name=version::${{env.TODAY}}_${GITHUB_SHA}"
         id: "version"
 
       - name: "Create release"
