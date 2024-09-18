@@ -39,7 +39,7 @@ jobs:
         run: echo "SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 
       - name: "Set release version"
-        run: echo "version=${{env.TODAY}}_${env.SHORT_SHA} >> $GITHUB_OUTPUT"
+        run: echo "version=${{env.TODAY}}_${{env.SHORT_SHA}} >> $GITHUB_OUTPUT"
         id: "version"
 
       - name: "Create release"
