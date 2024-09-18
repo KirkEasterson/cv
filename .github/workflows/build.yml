@@ -35,8 +35,11 @@ jobs:
       - name: "Get current date"
         run: echo "TODAY=$(date +'%Y_%m_%d')" >> $GITHUB_ENV
 
+      - name: "Get short SHA"
+        run: echo "SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
       - name: "Set release version"
-        run: echo "version=${{env.TODAY}}_${GITHUB_SHA} >> $GITHUB_OUTPUT"
+        run: echo "version=${{env.TODAY}}_${env.SHORT_SHA} >> $GITHUB_OUTPUT"
         id: "version"
 
       - name: "Create release"
