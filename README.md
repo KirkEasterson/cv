@@ -6,3 +6,7 @@ All files for my CV
 ```
 make
 ```
+
+## Dependencies
+
+- `rubber`: https://github.com/petrhosek/rubber
