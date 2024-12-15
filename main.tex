@@ -26,7 +26,10 @@
 % BIO
 %%%%%%%%%%%%%%%%%%%%
 
-Kirk is an innovative fullstack developer with a focus on backend. He has a wide set of competencies which includes C\#, F\#, Golang, Java, and Python in the backend, and Typescript, React in the frontend. He has extensive knowledge of building REST APIs in ASP.NET and gRPC servers with Golang. Kirk has concrete project experience with cloud platforms, with a special focus on Google Cloud Platform (GCP). In addition, Kirk has experience with all phases of the product life cycle from prototyping to implementation and operations with scale-ups such as Unacast and Loop54. Kirk is an enthusiastic team player who thrives on tackling difficult tasks and is committed to delivering high quality results for stakeholders.
+Kirk is a backend developer with 5+ years experience specializing in Golang and TypeScript. Also proficient in .NET(C\# \& F\#) and Python. He has 2+ years experience with Google Cloud Platform (GCP), and has also worked with Microsoft Azure \& Amazon AWS. Building REST APIs is one of Kirk's strongest qualities, as well as a passion for solving complex problems with elegant solutions. \\
+
+% He is a musician. TODO: more
+
 \begin{center}\hrule\end{center}
 
 
@@ -37,11 +40,16 @@ Kirk is an innovative fullstack developer with a focus on backend. He has a wide
 
 \inlineheadsection
 {Languages:}
-{Golang, Typescript, Javascript, Python, C\#, F\#, Java, SQL, Bash}
+{Golang, TypeScript, JavaScript, C\# (csharp), F\# (fsharp), Bash, Rust, OCaml, Zig, Python, Java, SQL}
 
 \inlineheadsection
-{Tools:}
-{GCP, Git, Docker, Terraform, Ansible, Elasticsearch, React, PostgreSQL, MongoDB}
+{Devops/Tools:}
+{Terraform, Docker, Docker-compose, Ansible, Redis, Elasticsearch, PostgreSQL, MongoDB, MySQL}
+
+\inlineheadsection
+{Frameworks:}
+{React, Node.js, .NET, Fable}
+
 \begin{center}\hrule\end{center}
 
 
@@ -52,92 +60,117 @@ Kirk is an innovative fullstack developer with a focus on backend. He has a wide
 
 \headedsection
 {\textbf{Miles} -- \textit{Senior IT Consultant}}
-{\textit{Aug 2024 -- present}} {
+{\textit{Aug 2024 -- present}} { \\
 }
 
 \headedsection
 {\textbf{Netlight} -- \textit{IT Consultant}}
-{\textit{Apr 2023 -- July 2024}} {
+{\textit{Apr 2023 -- Jul 2024}} { \\
 	\begin{itemize}[noitemsep,nolistsep]
-		\item reMarkable - {\it Backend developer}
-			\begin{itemize}[noitemsep,nolistsep]
-				\item Develop a business critical web service API using {\it
-					Golang} and {\it Google Cloud Platform} to increase the client's sales
-			\end{itemize}
-		\item Bright Academy - {\it ML-ops (Machine Learning Devops)}
-			\begin{itemize}[noitemsep,nolistsep]
-				\item Build and design an ML-ops course for industry professionals
-				\item Write {\it infrastructure as code} for a student environment in {\it terraform} to spawn {\it n} virtual machines with their own deployment pipeline to run a basic model on predicting \href{https://www.kaggle.com/datasets/camnugent/california-housing-prices}{California Housing Prices}.
-				\item Teach students how to deploy multiple models, monitor the model, and continuously train when new data is available
-			\end{itemize}
+		\item \textbf{reMarkable} -- {\it Backend developer} -- {\it Jul 2023 - Jul 2024} \\
+			reMarkable is a Norwegian startup based in Oslo. It produces an E-Ink writing tablet designed for reading documents and textbooks, sketching, and note-taking, aiming to replicate the experience of writing on paper. \\
+
+			reMarkable planned to introduce new third-party integrations into the Node.js backend of its online store, which was struggling with technical debt and couldn't scale to meet its needs. Kirk joined a team tasked with building a new backend in Golang, designed to run in a GCP cloud environment. He joined shortly after an MVP had been built and continued working on the project until shortly after its launch. By the time Kirk left the project, the new system had processed over 60,000 orders. \\
+
+			Kirk took responsibility for designing and implementing cloud infrastructure using Terraform and Atlantis, as well as adding several new endpoints to the new API. His biggest contribution was building an event-driven architecture using Pub/Sub and a PostgreSQL Cloud SQL database. Since monitoring is crucial, he added extensive OpenTelemetry metrics to visualize them in Prometheus. \\
+
+			He was also responsible for developing backend services used by the frontend and internal systems. The new backend had to serve as a replacement for the old one. Kirk contributed to both the old Node.js backend and the React micro-frontend to make necessary changes. He implemented logic for cart checkout and post-purchase order processing. Kirk also integrated third-party services such as Stripe, PayPal, and Affirm. All microservices were deployed on GCP Cloud Run, a Kubernetes wrapper. \\
+
+			He also wrote logic for validating and confirming orders within the Pub/Sub event-driven architecture. Several API endpoints were built to enable push subscriptions in Pub/Sub. If issues arose with an order, Kirk built a retry solution and a system for manual intervention when needed. \\
+
+			He took the initiative to create several tools for emulating the cloud solution locally. He developed a program for dynamically creating Pub/Sub topics and subscriptions, allowing developers to run the entire event-driven architecture locally. Due to limitations with third-party integrations, he implemented a tagging system similar to Kafka. \\
+
+		\item \textbf{Bright Academy} - {\it ML-ops (Machine Learning Devops)} -- {\it Apr 2023 - Jul 2023} \\
+
+			Bright Academy is a professional training and coaching company focused on project management. They offer innovative methods with proven results, supported by experienced instructors and coaches, to develop principled, innovative project managers who enhance business value and generate ideas that advance project management practices. \\
+
+			Bright Academy partnered with Netlight to create a course on Machine Learning DevOps (MLOps). This course was designed for industry professionals to supplement their knowledge on deploying and maintaining a machine learning model in production. \\
+
+			Kirk joined a team of three other machine learning engineers. His responsibilities included setting up the project's infrastructure and ensuring that the course could be recreated every time it needed to be rerun. He contributed to the course design and helped identify the necessary infrastructure from an educational perspective. \\
+
+			He wrote Terraform scripts to create a variable number of virtual machines in Microsoft Azure. Each virtual machine had an Azure SQL database containing training and test data. This database would be periodically updated to simulate the availability of new data for the model. A GitHub repository forked from the course template was also created for each student, allowing them to retain access after the course ended. \\
+
+			He also configured GitHub Actions in the repository to deploy models to Azure Containers and wrote a Python API to serve results from the currently running model. \\
+
 	\end{itemize}
 }
 
 \headedsection
-{\textbf{Unacast} -- \textit{Backend software engineer}}
-{\textit{Mar 2022 -- Mar 2023}} {
-	\begin{itemize}[noitemsep,nolistsep]
-		\item Build and maintain the data catalog using Golang with PostgreSQL and BigQuery
-		\item Build and maintain the internal and external GRPC APIs using golang, and the python client that is a GRPC wrapper
-		\item Index data to the catalog using Google Colab and Python3
-	\end{itemize}
+{\textbf{Unacast} -- \textit{Backend developer}}
+{\textit{Mar 2022 -- Mar 2023}} { \\
+
+	Unacast is a Norwegian technology company that provides aggregated location data and analytics. Their platform analyzes data from mobile devices and sensors to offer insights into human behavior. Unacast offers a range of APIs that allow customers to access and integrate its data into their own systems. Additionally, customers can specify a cloud storage configuration to receive data deliveries at regular intervals. \\
+
+	Unacast previously used a raw SQL-based system that was prone to errors and required frequent technical assistance for routine operations, leading to difficult log interpretation and guesswork. Realizing the need for a more scalable and reliable solution, Unacast decided to build a new system that could be used by the Customer Success (CS) department. This system would manage data subscriptions and schedule data deliveries to a customer’s specified cloud storage. \\
+
+	Kirk joined a cross-functional team at Unacast as a full-stack developer, working alongside two other developers and a designer. In the early development stages, Kirk played a key role in designing the API and system architecture. His primary focus was developing the gRPC API in Golang, creating endpoints to crete the subscription. He wrote Protocol Buffer definitions to ensure consistent data types across all languages in the tech stack. Kirk ran Elasticsearch and PostgreSQL Docker containers to separate services and simplify deployment to Google Cloud Run. He designed and implemented task logic in Google Task Queue to orchestrate data deliveries from BigQuery to customers' configured cloud storage. He also built interfaces for delivering data to Amazon S3, Google Cloud Storage, and BigQuery. His API development expertise also contributed to building the frontend in TypeScript. \\
+
+	He collaborated with another developer to create a wizard that guided customer service representatives through setting up client subscriptions and recurring data deliveries. He also implemented Recharts for data visualization and integrated Google Analytics for user statistics. Kirk’s attention to detail and efficiency ensured that this feature was delivered on time and within budget. \\
+
+	After the MVP phase was completed, Kirk worked with other developers to build a Node.js server as a backend-for-frontend, also written in TypeScript. The frontend had previously used gRPC-web, which has limited support and made troubleshooting network requests challenging. With the new server, the frontend could use JSON and HTTP requests, enabling frontend-specific endpoints while retaining the advantages of a gRPC server for the backend. Documentation for this service was generated using Swagger. \\
 	}
 
 \headedsection
 {\textbf{Loop54} -- \textit{Full stack developer}}
-{\textit{Mar 2020 -- Mar 2022}} {
-	\begin{itemize}[noitemsep,nolistsep]
-		\item Designed and built large portion of customer portal. Frontend: \textit{Fable(F\#)} with \textit{Ant Design} library, backend: \textit{C\#} with \textit{PostgreSQL} and \textit{MongoDB}
-		\item Built internal tools in \textit{C\#} for Product Specialists to process customer product information
-		\item Wrote various bash scripts for git hooks and capturing network traffic
-	\end{itemize}
+{\textit{Mar 2020 -- Mar 2022}} { \\
+
+	Loop54 is a Swedish software company offering an AI-powered search and personalization platform for e-commerce businesses. Their technology uses natural language processing and machine learning algorithms to deliver accurate and personalized search results and product recommendations to online shoppers. \\
+
+	While clients could see increased sales from Loop54’s machine learning engine, they also wanted concrete data on the product’s performance and some level of control over its functionality. The goal was to create a web portal that would allow clients to adjust product rankings in search results and define synonyms for specific search terms. This feature was also valuable for Loop54, as they did not have direct insight into such client-specific data. \\
+
+	Kirk joined as a full-stack developer to build the customer portal. When he joined the project, only a proof-of-concept was in place. The frontend was written in Fable React with F\# using the AntD UI library. Customer data was stored in Elasticsearch, and aggregated data was stored in BigQuery (BQ). Kirk extended the C# REST API with endpoints to query BQ and analyze the data to be displayed in the portal. This included metrics such as how many users searched for each query, which products users interacted with after a specific search, and more. PostgreSQL was used to store data about Loop54’s internal engine, while user data was stored in MongoDB. The frontend was written in Fable with F# and used the Antd UI library, with Webpack used for building. \\
+
+	He developed new pages in the portal that allowed clients to input synonyms for e-commerce searches and promote specific products during campaigns. He designed it so that changes would immediately be reflected in the machine learning model. Kirk also implemented Google Analytics to collect and analyze customer interaction data. All infrastructure was arranged on-site. Kirk used Ansible to manage the web server and TeamCity for building and deploying the application. \\
+
+	After the initial implementation, Kirk followed up by working with another dev to build an email reporting system, allowing customers to receive data from the portal in recurring email reports. Kirk wrote a program in F# scheduled to run daily to handle report deliveries based on the client’s specified frequency. For the actual email delivery, Kirk used MailChimp. Additionally, Kirk built a frontend in Preact for the Customer Success team, enabling them to configure reports without needing to contact the engineering department. As a result of Kirk's work, CS became more efficient, and development could focus on other tasks beyond operations. \\
+
+	Kirk also maintained and extended Loop54's demo program and internal admin tools. The demo program was written with React in vanilla JavaScript. Kirk set up a CI/CD pipeline for the demo in TeamCity, as it had previously been manually deployed without build status indications. He also wrote new pages in the admin tool's frontend to manage user permissions in the customer portal and handle separate instances of a client’s machine learning engines. This tool was written with Preact. \\
+
+	Various other tasks were worked on by Kirk, since working at a startup requires wearing many hats. But one of his most notable achievements was making a pull request to Amazon's open source ION parsing library for dotnet (ion-dotnet). This included a big fix for using negative numbers in various locales, which had previously failed. This fix was released in v1.2.2. \\
 }
 
 \headedsection
-{\textbf{Saab AB} -- \textit{Masters Thesis}}
-{\textit{May 2021 -- Dec 2021}} {
-	\begin{itemize}[noitemsep,nolistsep]
-		\item Built tool in \textit{Python} to automate testing for open-source software defined networking tool \textit{P4}
-		\item Implements \textit{Microsoft}'s open-source tool \textit{PICT} to generate and run combinatorial test cases
-		\item Implements \textit{Packet Test Framework} (PTF) to run the test cases
-		\item Work continued from Research Assistant position at KTH \textit{(see below)}
-	\end{itemize}
-}
+{\textbf{Saab AB / KTH} -- \textit{Masters Thesis / Research Assisstant}}
+{\textit{Mar 2020 -- Dec 2021}} { \\
 
-\headedsection
-{\textbf{KTH} -- \textit{Research Assistant}}
-{\textit{Mar 2020 -- Mar 2021}} {
-	\begin{itemize}[noitemsep,nolistsep]
-		\item Partnership with KTH and Saab AB to capture network traffic in open-source software defined networking tool \textit{P4}
-		\item Built with \textit{Python} using the Observer design pattern
-	\end{itemize}
+	Saab is a Swedish multinational aerospace and defense company known for delivering military defense systems, aeronautical engineering, and high-tech products and services worldwide. When Saab launches a helicopter, they anticipate it being in service for decades. Software updates cannot be easily deployed, and code errors can have catastrophic consequences. Because of this, Saab aims to test its software as thoroughly as possible.	However, conducting such comprehensive testing efficiently is challenging. Saab wanted to test its network configurations to ensure that security measures were enforced and functioned as expected. \\
+
+	KTH Royal Institute of Technology, located in Stockholm, Sweden, is one of Europe’s leading technical and engineering universities. Established in 1827, KTH consistently ranks among the world’s top universities in engineering and technology. Its Computer Science department's collaborations with leading tech companies like Ericsson, Spotify, and Google makes it a hub for real-world innovation and technological advancement. \\
+
+	Kirk began as a research assistant working on how to implement replayability in {\it Mininet}, an open-source software-defined networking tool. Kirk added the ability to capture network traffic from a session, and then generate python code for {\it PTF (Packet Test Framework)}, an open-source network testing tool, to ensure that the replayed network was identical to the one from the original session. \\
+
+	His work as a research assistant at KTH was built on for his master's at SAAB. Mininet was replaced with P4, a different open-source tool, due to it having a wider feature set. Kirk worked with Mininet, an open-source Python tool, to simulate network communication during testing. However, Mininet's inability to save sessions for replay and automate tests limited its effectiveness. To overcome these challenges, Kirk developed a forked version of Mininet that allowed session data storage, enabling replay and test automation. This enhancement facilitated comprehensive testing across a broader range of network configurations. Since Mininet’s capabilities were limited, Kirk transitioned to using P4 for more advanced testing. \\
+
+	He wrote a Python program capable of accepting parameters and possible values. This program generated various pairwise combinations of values to be tested with the target software, in this case, P4. The combinations were generated with Microsoft's open-source tool {\it PICT}. To optimize testing and ensure thoroughness, Kirk determined the minimum required combinations for different testing levels. The lowest level of value sets was designated for regular CI, prioritizing efficiency. Additional sets were created for nightly, weekly, monthly, and final testing phases, carefully balancing value combinations due to the extended test duration, which could span hours. Kirk designed the program to integrate seamlessly with GitHub Actions, enabling automated and scalable test execution. \\
 }
 
 \headedsection
 {\textbf{Maharam} -- \textit{Applications Engineer Intern}}
-{\textit{Mar 2019 -- Aug 2019}} {
-	\begin{itemize}[noitemsep,nolistsep]
-		\item Wrote over 3,000 lines of Java and BBj to assist with data migration to SQL Server
-		\item Rewrote original code to reduce overnight push time from 12 hours for 10 tables to 8 hours for over 750 tables
-	\end{itemize}
+{\textit{Mar 2019 -- Aug 2019}} { \\
+
+	Maharam is an American textile company founded in 1902, which specializes in fabrics for commercial and residential interiors. They are a part of the Herman Miller Group and place a strong emphasis on sustainability and using eco-friendly materials and production processes. Its collections often feature minimalist patterns, bold textures, and rich color palettes. \\
+
+	For many years, Maharam used Business BASIC in Java (BBj) for its programming tasks, with plans to migrate to .NET and Microsoft SQL Server. During this transition, Maharam continued to rely on the BASIS Database Management System (DBMS). However, this database was outdated and lacked input sanitation. They needed a way to periodically sync the BASIS DBMS database with the new SQL Server database so they could quickly prototype designs for the new system. This program would need to be run every night, but it also had to detect and fix errors from the lack of input validation.  \\
+
+	Kirk was faced with a challenge since BBj is an obscure language with little support and documentation. However, he was able to take advantage of BBj's ability to call java code since it runs on the Java Virtual Machine (JVM). The resulting program was able to complete nightly syncs of over 100GB of data, and is still being run to this day! (as of 2024). \\
 }
 
 \headedsection
-{\textbf{The Paramount} -- \textit{Stage Manager}}
-{\textit{May 2015 -- Aug 2019}} {
-	\begin{itemize}[noitemsep,nolistsep]
-		\item Stage-managed over 100 acts in a 1,500 seat entertainment venue
-		\item Worked for artists such as The Beach Boys, Fergie, Judas Priest, Weird Al, and Meatloaf
-	\end{itemize}
+{\textbf{The Paramount} -- \textit{Stage Manager/Stage Hand}}
+{\textit{May 2015 -- Aug 2019}} { \\
+
+	The Paramount is a premier live entertainment venue for hosting concerts, comedy shows, and special events. This includes artists such as Judas Priest, Billy Joel, and Ed Sheeran. Since its opening in 2011, it has become a cultural landmark on Long Island, attracting top-tier artists from various genres, including rock, pop, hip-hop, and stand-up comedy. \\
+
+	Kirk started as a stage hand. His main responsibilities were unloading trucks, pushing cases, installing lighting rigs, and running cables. His practical knowledge and experience led to him often taking the lead, and being given stage manager responsibilities. This gave Kirk valuable insight on how work efficiently with new teams almost every day, but also how to learn quickly and implement those new ideas to improve the "local team". This role was ideal for Kirk at the time, as he was also attending Stony Brook University to study Computer Science. \\
 }
 
 \headedsection
 {\textbf{The Town Pants} -- \textit{Musician (Upright Bass \& Piano)}}
-{\textit{May 2014 -- Aug 2019}} {
-	\begin{itemize}[noitemsep,nolistsep]
-		\item Toured in an internationally established Irish folk band
-		% \item Played with musicians such as Zac Brown, Cory Henry, and George Millar
-	\end{itemize}
+{\textit{May 2014 -- Aug 2019}} { \\
+
+	The Town Pants are a Canadian folk-rock band known for their energetic performances and unique blend of Celtic, roots, and rock music. Formed in Vancouver, British Columbia, the band has built a dedicated fanbase through spirited live shows and infectious melodies. Their music combines traditional Irish and Scottish folk influences with modern rock elements, featuring driving rhythms, powerful vocals, and skilled instrumentation, including fiddle, banjo, and guitar. Lyrically, The Town Pants explore themes of adventure, camaraderie, and the highs and lows of life, often delivered with a sense of humor and storytelling charm. With multiple albums and extensive touring across North America and Europe, The Town Pants have become a popular act at festivals, pubs, and concert venues. Their ability to fuse folk traditions with rock energy makes them a standout in the contemporary folk-rock scene. \\
+
+	Kirk played the upright-bass (contrabass) with The Town Pants since before finishing his Bachelor's degree. He had become a fan favorite due to his tendency to enter (and sometimes win) eating competitions at festivals that the band played at. This role was ideal for Kirk at the time, as it gave him the inspiration to pursue Computer Science but also continue his love of music while transitioning to a new career. \\
 }
 \begin{center}\hrule\end{center}
 
@@ -192,11 +225,32 @@ Kirk is an innovative fullstack developer with a focus on backend. He has a wide
 \roottitle{Personal Projects}
 
 \headedsection
+{\textbf{This CV}}
+{\textit{Dec 2016 -- present}} {
+	\begin{itemize}[noitemsep,nolistsep]
+		\item \url{https://github.com/KirkEasterson/cv}
+		\item Written with \LaTeX
+		\item Implemented github actions to automatically build on each commit
+		\item Implemented github actions to build and create a new release on each commit to \texttt{main}
+	\end{itemize}
+}
+
+\headedsection
+{\textbf{kirkeasterson.com}}
+{\textit{Dec 2017 -- present}} {
+	\begin{itemize}[noitemsep,nolistsep]
+		\item \url{https://www.kirkeasterson.com}
+		\item Static website built with Hugo
+		\item Implemented github actions to automatically deploy on new changes
+	\end{itemize}
+}
+
+\headedsection
 {\textbf{KALE \textit{(Kirk's Automated Linux Environment)}} -- \textit{Ansible}}
 {\textit{Dec 2021 -- present}} {
 	\begin{itemize}[noitemsep,nolistsep]
-		\item Automated installation of Kirk's personal development environment on Ubuntu Server 22.04, Arch Linux, and MacOS
 		\item \url{https://github.com/KirkEasterson/kale}
+		\item Automated installation of Kirk's personal development environment on Ubuntu Server 22.04, Arch Linux, and MacOS
 	\end{itemize}
 }
 
@@ -204,8 +258,8 @@ Kirk is an innovative fullstack developer with a focus on backend. He has a wide
 {\textbf{.dotfiles}}
 {\textit{Dec 2019 -- present}} {
 	\begin{itemize}[noitemsep,nolistsep]
-		\item Configuration files for programs Kirk uses on a daily basis
 		\item \url{https://github.com/KirkEasterson/.dotfiles}
+		\item Configuration files for programs Kirk uses on a daily basis
 	\end{itemize}
 }
 
