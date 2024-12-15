@@ -11,12 +11,13 @@ jobs:
       - uses: "actions/checkout@v4"
       - uses: "xu-cheng/latex-action@v3"
         with:
+          working_directory: "./src/"
           root_file: "main.tex"
 
       - uses: "actions/upload-artifact@v4"
         with:
           name: "artifact"
-          path: "main.pdf"
+          path: "./src/main.pdf"
 
   release:
     needs: "build"
