@@ -1,5 +1,3 @@
-provider "github" {}
-
 data "github_user" "kirk" {
   username = "kirkeasterson"
 }
@@ -8,7 +6,7 @@ resource "github_repository" "this" {
   name        = "cv"
   description = "The source code for my CV"
 
-  visibility = "private"
+  visibility = "public"
   has_issues = false
   has_discussions = false
   has_projects = false
