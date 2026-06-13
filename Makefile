@@ -3,12 +3,10 @@ BUILD_DIR=./build/
 CV=$(SRC_DIR)template.typ
 OUT=$(BUILD_DIR)cv.pdf
 
-
 .PHONY: clean
 clean:
 	@mkdir -p $(BUILD_DIR)
 	@rm -f $(OUT)
-
 
 .PHONY: build
 build: clean
@@ -17,3 +15,7 @@ build: clean
 .PHONY: watch
 watch: clean
 	docker compose run --rm typst watch "$(CV)" "$(OUT)"
+
+.PHONY: lint
+lint:
+	docker compose run --rm vale $(SRC_DIR)
