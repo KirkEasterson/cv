@@ -26,9 +26,8 @@ work:
         startDate: 2025-08-01
         endDate: "present"
         highlights:
-          - Abilities forfeited situation extremely my to he resembled. Old had conviction discretion understood put principles you. Match means keeps round one her quick. She forming two comfort invited. Yet she income effect edward. Entire desire way design few.
-          - Mrs sentiments led solicitude estimating friendship fat. Meant those event is weeks state it to or. Boy but has folly charm there its. Its fact ten spot drew.
-          - Surrounded affronting favourable no mr. Lain knew like half she yet joy. Be than dull as seen very shot. Attachment ye so am travelling estimating projecting is. Off fat address attacks his besides. Suitable settling mr attended no doubtful feelings. Any over for say bore such sold five but hung.
+          - "*Technologies*: Golang, Kubernetes, GCP, Docker, Terraform, ArgoCD, PostgreSQL"
+          - Working on "Member and Partner" team, responsible for over 2.5 million member in Norway
   - organization: Miles AS
     url: https://miles.no
     location: Oslo, Norway
@@ -36,10 +35,13 @@ work:
       - position: Senior IT Consultant
         startDate: 2024-08-01
         endDate: 2025-07-31
+        highlights: []
+      - position: "Amedia - Software Engineer"
+        startDate: 2025-01-01
+        endDate: 2025-06-30
         highlights:
-          - Gay one the what walk then she. Demesne mention promise you justice arrived way. Or increasing to in especially inquietude companions acceptance admiration. Outweigh it families distance wandered ye an. Mr unsatiable at literature connection favourable. We neglected mr perfectly continual dependent.
-          - Off melancholy alteration principles old. Is do speedily kindness properly oh. Respect article painted cottage he is offices parlors.
-          - Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage mr be. Hold do at tore in park feet near my case. Invitation at understood occasional sentiments insipidity inhabiting in.
+          - "*Technologies*: Typescript, Node, Kubernetes, GCP, Docker, Terraform, ArgoCD"
+          - Working on "video platform" team, responsible for streams on TV2 and video upload support for journalists
   - organization: Netlight AS
     url: https://netlight.com
     location: Oslo, Norway
@@ -47,10 +49,13 @@ work:
       - position: IT Consultant
         startDate: 2023-04-01
         endDate: 2024-07-31
+        highlights: []
+      - position: "reMarkable - Software Engineer"
+        startDate: 2023-07-01
+        endDate: 2024-07-31
         highlights:
-          - Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. Middleton suspicion age her attention.
-          - Chiefly several bed its wishing. Is so moments on chamber pressed to. Doubtful yet way properly answered humanity its desirous. Minuter believe service arrived civilly add all. Acuteness allowance an at eagerness favourite in extensive exquisite ye.
-          - You vexed shy mirth now noise. Talked him people valley add use her depend letter. Allowance too applauded now way something recommend. Mrs age men and trees jokes fancy.
+          - "*Technologies*: Golang, Cloud Run, GCP, Docker, Terraform, Stripe, PostgreSQL"
+          - Working on team responsible for building the new backend for the web shop, making over 200,000 orders
   - organization: Unacast AS
     url: https://unacast.com
     location: Oslo, Norway
@@ -59,9 +64,8 @@ work:
         startDate: 2022-04-01
         endDate: 2023-03-31
         highlights:
-          - Gay pretended engrossed eagerness continued ten. Admitting day him contained unfeeling attention mrs out.
-          - Dashwood contempt on mr unlocked resolved provided of of. Stanhill wondered it it welcomed oh. Hundred no prudent he however smiling at an offence. If earnestly extremity he he propriety something admitting convinced ye. Pleasant in to although as if differed horrible.
-          - Mirth his quick its set front enjoy hoped had there. Who connection imprudence middletons too but increasing celebrated principles joy. Herself too improve gay winding ask expense are compact. New all paid few hard pure she.
+          - "*Technologies*: Golang, Cloud Run, GCP, Docker, BigQuery, PostgreSQL"
+          - Working on "catalog team", responsible for managing data catalog and data delivery system
   - organization: Loop54 AB
     url: https://loop54.com
     location: Stockholm, Sweden
@@ -70,9 +74,9 @@ work:
         startDate: 2020-03-01
         endDate: 2022-03-31
         highlights:
-          - Name were we at hope. Remainder household direction zealously the unwilling bed sex. Lose and gay ham sake met that. Stood her place one ten spoke yet. Head case knew ever set why over. Marianne returned of peculiar replying in moderate
-          - Roused get enable garret estate old county. Entreaties you devonshire law dissimilar terminated.
-          - Admiration we surrounded possession frequently he. Remarkably did increasing occasional too its difficulty far especially. Known tiled but sorry joy balls. Bed sudden manner indeed fat now feebly. Face do with in need of wife paid that be.
+          - "*Technologies*: C#sym.hash, F#sym.hash (Fable), .NET, React, PostgreSQL, MongoDB"
+          - Worked on backend and frontend for customer data portal
+          - Responsible for adding features to demo and internal admin tool
   - organization: Maharam
     url: https://maharam.com
     location: Yaphank, New York, USA
@@ -81,9 +85,8 @@ work:
         startDate: 2019-04-01
         endDate: 2019-08-31
         highlights:
-          - No me applauded or favourite dashwoods therefore up distrusts explained.
-          - Am if number no up period regard sudden better. Decisively surrounded all admiration and not you. Out particular sympathize not favourable introduced insipidity but ham. Rather number can and set praise.
-          - Distrusts an it contented perceived attending oh. Thoroughly estimating introduced stimulated why but motionless.
+          - "*Technologies*: Java, BBj (Business BASIC on Java), SQL server"
+          - Responsible for migrating from ASIS Database Management System (DBMS) to SQL server
 
 education:
   - institution: KTH Royal Institute of Technology
@@ -96,8 +99,8 @@ education:
     honors: null
     courses: null
     highlights:
-      - "*Thesis*: A convolutional neural network for predicting Greenland glacier melt and glacial water flow"
-      - "*Activities*: Debating, Chess, Cricket"
+      - "*Thesis*: Combinatorial testing"
+      - Research assisstant for testing methodologies
   - institution: Stony Brook University
     url: https://stonybrook.edu
     area: Computer Science
@@ -107,9 +110,7 @@ education:
     location: Stony Brook, New York, USA
     honors: null
     courses: null
-    highlights:
-      - "*Thesis*: A convolutional neural network for predicting Greenland glacier melt and glacial water flow"
-      - "*Activities*: Debating, Chess, Cricket"
+    highlights: []
   - institution: Fredonia University
     url: https://fredonia.edu
     area: Music Performance
@@ -119,33 +120,31 @@ education:
     location: Fredonia, New York, USA
     honors: null
     courses: null
-    highlights:
-      - "*Thesis*: A convolutional neural network for predicting Greenland glacier melt and glacial water flow"
-      - "*Activities*: Debating, Chess, Cricket"
+    highlights: []
 
 affiliations: null
 
 awards: null
 
-certificates:
-  - name: "Learning How to Learn: Powerful mental tools to help you master tough subjects"
-    date: 2021-09-01
-    issuer: Coursera
-    url: https://example.com
-    id: "1MPR3CVR3SUM3"
+certificates: null
+# - name: "Learning How to Learn: Powerful mental tools to help you master tough subjects"
+#   date: 2021-09-01
+#   issuer: Coursera
+#   url: https://example.com
+#   id: "1MPR3CVR3SUM3"
 
 publications: null
 
-projects:
-  - name: "Job Tailor"
-    url: https://example.com/
-    affiliation: Open University
-    startDate: 2020-11-01
-    endDate: 2021-04-30
-    highlights:
-      - Developed an AI-powered résumé editor app to create tailored résumés from users' CVs based on specific job descriptions.
-      - Acquired more than 100,000 user sign ups in 3 months and more than 10,000 active monthly users.
-      - Generated profit of upwards \$20,000 yearly with a team of only four developers and three business operatives
+projects: null
+# - name: "Job Tailor"
+#   url: https://example.com/
+#   affiliation: Open University
+#   startDate: 2020-11-01
+#   endDate: 2021-04-30
+#   highlights:
+#     - Developed an AI-powered résumé editor app to create tailored résumés from users' CVs based on specific job descriptions.
+#     - Acquired more than 100,000 user sign ups in 3 months and more than 10,000 active monthly users.
+#     - Generated profit of upwards \$20,000 yearly with a team of only four developers and three business operatives
 
 skills:
   - category: Programming
