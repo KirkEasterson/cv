@@ -2,7 +2,7 @@
 
 All files for my CV. The document is written in [typst](https://typst.app/) using the
 [imprecv template](https://vale.sh/docs/formats/markdown). Linting is performed
-[with vale](https://vale.sh/docs/formats/markdown).
+with [vale](https://vale.sh/docs/formats/markdown).
 
 ## Development
 
