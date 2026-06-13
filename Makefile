@@ -16,6 +16,9 @@ build: clean
 watch: clean
 	docker compose run --rm typst watch "$(CV)" "$(OUT)"
 
+styles:
+	docker compose run --rm vale sync
+
 .PHONY: lint
-lint:
+lint: styles
 	docker compose run --rm vale $(SRC_DIR)

@@ -9,7 +9,6 @@ services:
   vale:
     image: docker.io/grafana/vale:latest
     container_name: vale
-    command: ["vale", "sync"]
     volumes:
       - .:/workspace
     working_dir: /workspace
