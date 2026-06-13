@@ -3,12 +3,14 @@ version: 2
 
 updates:
   - package-ecosystem: "github-actions"
-    directory: "/"
+    directory: ".github/workflows"
     schedule:
       interval: "daily"
-      time: "09:00"
+      time: "07:00"
       timezone: "Europe/Stockholm"
-    groups:
-      github-actions:
-        patterns:
-          - "*"
+  - package-ecosystem: "terraform"
+    directory: "infrastructure/terraform"
+    schedule:
+      interval: "daily"
+      time: "07:00"
+      timezone: "Europe/Stockholm"
