@@ -3,6 +3,10 @@
 *.pdf
 build/
 
+######## Vale
+
+styles/
+
 ######## Terraform
 
 # Local .terraform directories
