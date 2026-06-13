@@ -8,6 +8,12 @@ updates:
       interval: "daily"
       time: "07:00"
       timezone: "Europe/Stockholm"
+  - package-ecosystem: "docker-compose"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "07:00"
+      timezone: "Europe/Stockholm"
   - package-ecosystem: "terraform"
     directory: "/infrastructure/terraform"
     schedule:

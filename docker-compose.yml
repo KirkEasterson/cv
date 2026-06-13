@@ -1,0 +1,14 @@
+---
+services:
+  typst:
+    image: ghcr.io/typst/typst:0.14.2
+    container_name: typst_compiler
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+  vale:
+    image: docker.io/grafana/vale:4dbecae7443c69b3e5fdfeeac7037a339cb82e4c
+    container_name: vale
+    volumes:
+      - .:/workspace
+    working_dir: /workspace

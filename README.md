@@ -1,22 +1,24 @@
 # CV
 
-All files for my CV
+All files for my CV. The document is written in [typst](https://typst.app/) using the
+[imprecv template](https://vale.sh/docs/formats/markdown). Linting is performed
+with [vale](https://vale.sh/docs/formats/markdown).
 
-## Building
+## Development
 
-```
-make
+```sh
+make build
 ```
 
 ## Dependencies
 
-- `rubber`: https://github.com/petrhosek/rubber
+- [docker](https://docs.docker.com/engine/install/): used for building and linting
 
 ## Infrastructure
 
 ### Terraform
 
-Generate a github token with the follow permissions:
+Generate a Github token with the follow permissions:
 
 - `repo:public_repo`
 - `read:org`
