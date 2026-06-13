@@ -1,16 +1,19 @@
 SRC_DIR=./src/
-CV=$(SRC_DIR)main.tex
-OUT=$(SRC_DIR)main
+BUILD_DIR=./build/
+CV=$(SRC_DIR)main.typ
+OUT=$(BUILD_DIR)main.pdf
 
-all:
-	rubber --pdf --force --jobname $(OUT) $(CV)
 
+.PHONY: clean
 clean:
-	rubber --clean $(CV)
-	rm $(OUT).pdf
+	@mkdir -p $(BUILD_DIR)
+	@rm -f $(OUT)
 
-watch:
-	while true; do \
-		$(MAKE) $(WATCHMAKE); \
-		inotifywait -qe close_write "./src/" --include ".*\.tex"; \
-	done
+
+.PHONY: build
+build: clean
+	docker compose run --rm typst compile "$(CV)" "$(OUT)"
+
+.PHONY: watch
+watch: clean
+	docker compose run --rm typst watch "$(CV)" "$(OUT)"
