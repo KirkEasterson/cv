@@ -5,7 +5,7 @@ All files for my CV
 ## Building
 
 ```
-make
+make build
 ```
 
 ## Dependencies
