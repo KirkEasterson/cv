@@ -1,7 +1,7 @@
 SRC_DIR=./src/
 BUILD_DIR=./build/
-CV=$(SRC_DIR)main.typ
-OUT=$(BUILD_DIR)main.pdf
+CV=$(SRC_DIR)template.typ
+OUT=$(BUILD_DIR)cv.pdf
 
 
 .PHONY: clean
