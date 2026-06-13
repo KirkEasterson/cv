@@ -1,7 +1,10 @@
 ---
 name: "build"
 
-on: ["push"]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -9,15 +12,12 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - uses: "actions/checkout@v4"
-      - uses: "xu-cheng/latex-action@v3"
-        with:
-          working_directory: "./src/"
-          root_file: "main.tex"
+      - run: make build
 
       - uses: "actions/upload-artifact@v4"
         with:
           name: "artifact"
-          path: "./src/main.pdf"
+          path: "./build/main.pdf"
 
   release:
     needs: "build"
