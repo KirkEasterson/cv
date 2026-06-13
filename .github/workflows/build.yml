@@ -4,6 +4,13 @@ name: "build"
 on: ["push"]
 
 jobs:
+  lint:
+    name: "lint"
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v6"
+      - run: make lint
+
   build:
     name: "build"
     runs-on: "ubuntu-latest"
@@ -16,7 +23,7 @@ jobs:
           path: "./build/main.pdf"
 
   release:
-    needs: "build"
+    needs: ["lint", "build"]
     if: github.ref == 'refs/heads/main'
     runs-on: "ubuntu-latest"
     permissions:
