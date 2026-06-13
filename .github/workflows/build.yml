@@ -8,13 +8,13 @@ jobs:
     name: "build"
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/checkout@v4"
-      - uses: "xu-cheng/latex-action@v3"
+      - uses: "actions/checkout@v6"
+      - uses: "xu-cheng/latex-action@v4"
         with:
           working_directory: "./src/"
           root_file: "main.tex"
 
-      - uses: "actions/upload-artifact@v4"
+      - uses: "actions/upload-artifact@v7"
         with:
           name: "artifact"
           path: "./src/main.pdf"
@@ -28,7 +28,7 @@ jobs:
     steps:
       - name: "Download artifact"
         id: "download-artifact"
-        uses: "actions/download-artifact@v4"
+        uses: "actions/download-artifact@v8"
         with:
           name: "artifact"
           path: "./"
