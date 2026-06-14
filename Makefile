@@ -14,6 +14,7 @@ build: clean
 
 .PHONY: watch
 watch: clean
+	mkdir -p $(BUILD_DIR)
 	docker compose run --rm typst watch "$(CV)" "$(OUT)"
 
 styles:
