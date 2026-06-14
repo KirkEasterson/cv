@@ -10,5 +10,5 @@ services:
     image: docker.io/grafana/vale:4dbecae7443c69b3e5fdfeeac7037a339cb82e4c
     container_name: vale
     volumes:
-      - .:/workspace
+      - .:/workspace:ro
     working_dir: /workspace
