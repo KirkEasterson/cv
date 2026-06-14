@@ -11,4 +11,5 @@ services:
     container_name: vale
     volumes:
       - .:/workspace:ro
+      - ./styles:/workspace/styles
     working_dir: /workspace

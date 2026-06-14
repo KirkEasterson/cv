@@ -17,7 +17,8 @@ watch: clean
 	docker compose run --rm typst watch "$(CV)" "$(OUT)"
 
 styles:
-	docker compose run --rm vale sync
+	mkdir -p styles
+	docker compose run --rm -v /etc/passwd:/etc/passwd:ro -v /etc/group:/etc/group:ro -u $(shell id -u) vale sync
 
 .PHONY: lint
 lint: styles
