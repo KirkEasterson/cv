@@ -5,11 +5,11 @@ OUT=$(BUILD_DIR)cv.pdf
 
 .PHONY: clean
 clean:
-	@rm -f $(OUT)
+	rm -f $(OUT)
 
 .PHONY: build
 build: clean
-	@mkdir -p $(BUILD_DIR)
+	mkdir -p $(BUILD_DIR)
 	docker compose run --rm typst compile "$(CV)" "$(OUT)"
 
 .PHONY: watch
