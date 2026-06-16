@@ -1,7 +1,7 @@
 ---
 services:
   typst:
-    image: ghcr.io/typst/typst:0.14.2
+    image: ghcr.io/typst/typst:0.15.0
     container_name: typst_compiler
     volumes:
       - .:/workspace:ro
